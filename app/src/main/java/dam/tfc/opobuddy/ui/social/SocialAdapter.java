@@ -15,8 +15,8 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 import dam.tfc.opobuddy.R;
-import dam.tfc.opobuddy.ui.model.Amigo;
-import dam.tfc.opobuddy.ui.model.Grupo;
+import dam.tfc.opobuddy.models.Amigo;
+import dam.tfc.opobuddy.models.Grupo;
 
 public class SocialAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 

@@ -1,4 +1,4 @@
-package dam.tfc.opobuddy.ui.model;
+package dam.tfc.opobuddy.models;
 
 public class Amigo {
     public String nombre, estado, foto;

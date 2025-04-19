@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "405316701352",
+    "firebase_url": "https://opobuddy-default-rtdb.firebaseio.com",
+    "project_id": "opobuddy",
+    "storage_bucket": "opobuddy.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405316701352:android:3daa5dbc1d778a783c469d",
+        "android_client_info": {
+          "package_name": "dam.tfc.opobuddy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnvQFNtwTLh9zCs6B2LgbqYCCTLU2B-8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
