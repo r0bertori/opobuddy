@@ -44,15 +44,17 @@ dependencies {
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
-    implementation(libs.legacy.support.v4)
-    implementation(libs.firebase.database)
     implementation(libs.activity)
+    implementation(libs.firebase.database)
     testImplementation(libs.junit)
+    androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation(libs.firebase.auth)
     implementation (libs.picasso)
-    implementation(libs.play.services.auth)
-    implementation(libs.facebook.android.sdk)
+    implementation (libs.firebase.auth)
+    implementation (libs.play.services.auth)
+    implementation (libs.facebook.android.sdk)
+
+
+
 
 }
-
