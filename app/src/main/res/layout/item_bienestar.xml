@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Bienestar emocional -->
+
+        <TextView
+            android:id="@+id/estadoEmocional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Cómo te sientes hoy?"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingTop="24dp" />
+
+        <LinearLayout
+            android:id="@+id/emojiLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="😟" android:textSize="32sp" android:layout_margin="8dp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="😐" android:textSize="32sp" android:layout_margin="8dp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🙂" android:textSize="32sp" android:layout_margin="8dp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="😊" android:textSize="32sp" android:layout_margin="8dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/reflexionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe una reflexión"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/recursosTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recursos disponibles"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingTop="24dp" />
+
+        <LinearLayout
+            android:id="@+id/recursosLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp">
+
+            <!-- Recurso: Respiración -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_respirar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ejercicio de respiración"
+                    android:textSize="12sp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Recurso: Meditación -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_meditacion" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meditación rápida"
+                    android:textSize="12sp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Recurso: Consejos -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_consejos" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consejos prácticos"
+                    android:textSize="12sp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Lista de Amigos -->
+        <TextView
+            android:id="@+id/tituloAmigos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amigos"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:paddingTop="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerAmigos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:nestedScrollingEnabled="false" />
+
+        <!-- Lista de Grupos -->
+        <TextView
+            android:id="@+id/tituloGrupos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grupos"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:paddingTop="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerGrupos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+</ScrollView>
