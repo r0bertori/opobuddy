@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".autenticacion.RecuperarContraseniaActivity"
+    android:padding="@dimen/padding">
+
+    <ImageButton
+        android:id="@+id/ibVolver"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvRecuperarContrasenia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Recuperar contraseña"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="@dimen/titulo"/>
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRecuperarContrasenia"
+        android:hint="Introduce tu correo"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnEnviarMensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCorreo"
+        android:text="Enviar"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvMensajeError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnEnviarMensaje"
+        android:textColor="@color/red"
+        android:textSize="@dimen/texto"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

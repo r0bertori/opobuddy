@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".autenticacion.LoginActivity"
+    android:padding="@dimen/padding">
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Login"
+        android:textSize="@dimen/titulo"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btnSignInGoogle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLogin"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Correo -->
+    <TextView
+        android:id="@+id/tvCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSignInGoogle"
+        android:text="Correo"
+        android:textSize="@dimen/texto"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCorreo"
+        android:layout_marginTop="10dp"
+        android:hint="Introduce tu correo"
+        android:textSize="@dimen/texto"
+        android:textColor="@color/black"/>
+
+    <!-- Contraseña -->
+    <TextView
+        android:id="@+id/tvContrasenia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCorreo"
+        android:text="Contraseña"
+        android:textSize="@dimen/texto"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/etContrasenia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvContrasenia"
+        android:layout_marginTop="10dp"
+        android:hint="Introduce tu contraseña"
+        android:textSize="@dimen/texto"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvRecuperarContrasenia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etContrasenia"
+        android:text="¿Has olvidado tu contraseña?"
+        android:textColor="@color/black"
+        android:textSize="@dimen/texto"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRecuperarContrasenia"
+        android:backgroundTint="@color/black"
+        android:text="Iniciar sesión"
+        android:textSize="@dimen/texto"
+        android:layout_marginTop="50dp"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/tvMensajeError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnIniciarSesion"
+        android:textColor="@color/red"/>
+
+    <TextView
+        android:id="@+id/tvRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="¿Aún no tienes cuenta?\nRegístrate"
+        android:textAlignment="center"
+        android:textSize="@dimen/texto"
+        android:textColor="@color/black" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
