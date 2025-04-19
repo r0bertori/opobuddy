@@ -9,8 +9,8 @@
 
     <!-- Logo -->
     <ImageView
-        android:layout_width="190dp"
-        android:layout_height="190dp"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
         android:src="@drawable/logo_owl"
         android:layout_marginBottom="20dp"
         android:contentDescription="logo" />
@@ -54,14 +54,14 @@
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Inicia sesion"
+        android:text="Inicia sesión"
         android:background="@drawable/button_background"
         android:textColor="@android:color/white"
         android:padding="12dp"
         android:layout_marginBottom="20dp"
         android:textAllCaps="false" />
 
-    <!-- Botones de Login con Google, Facebook -->
+    <!-- Botones de Login con Google y Facebook -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -73,14 +73,15 @@
             android:id="@+id/btn_google"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_google"
+            android:src="@drawable/google"
             android:contentDescription="Inicio con google"
             android:layout_margin="10dp"/>
 
         <ImageView
+            android:id="@+id/btn_facebook"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_facebook"
+            android:src="@drawable/facebook"
             android:contentDescription="Inicio con facebook"
             android:layout_margin="10dp"/>
 
@@ -100,7 +101,7 @@
         android:id="@+id/tv_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registrate aquí"
+        android:text="Regístrate aquí"
         android:textSize="14sp"
         android:textColor="@color/login_button_color"
         android:textStyle="bold"
